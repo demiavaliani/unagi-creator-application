@@ -1,28 +1,62 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div id="app">
+		<ProfileSignUp></ProfileSignUp>
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ProfileSignUp from "./components/ProfileSignUp.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+	name: "App",
+	components: {
+		ProfileSignUp,
+	},
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #eeeff3 !important;
+}
+
+@media (max-width: 576px) {
+	body {
+		height: auto;
+	}
+}
+
+@font-face {
+	font-family: "KyivType";
+	src: url("assets/fonts/KyivType\ Sans\ Regular.otf") format("truetype");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Jost";
+	src: url("assets/fonts/Jost-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Jost";
+	src: url("assets/fonts/Jost-Medium.ttf") format("truetype");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "TT Norms";
+	src: url("assets/fonts/TTNorms-Regular.otf") format("truetype");
 }
 </style>
